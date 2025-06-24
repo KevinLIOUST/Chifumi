@@ -5,7 +5,7 @@ let actionJoueur2 = "";
 let resultat = "";
 let cptVictoireJoueur1 = 0;
 let cptVictoireJoueur2 = 0;
-// let audio = new Audio("../musique/FairyTail_Main_Theme.mp3"); audio.play();
+let audio = new Audio("../musique/FairyTail_Main_Theme.mp3"); audio.play();
 
 // Fonction pour que les deux joueurs jouent une action
 function jouerAction(action) {
