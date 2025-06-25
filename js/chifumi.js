@@ -25,37 +25,65 @@ function jouerAction(action) {
     console.log("Action joueur 2 : " + actionJoueur2);
 
     if (actionJoueur1 == actionJoueur2) {
-        resultat = "Egalité ! :)";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
+        setTimeout(() => {
+            resultat = "Egalité ! :)";
+            document.getElementById("resultat").innerText = resultat;
+        }, "3000");
     } else if (actionJoueur1 == tabActions[0] && actionJoueur2 == tabActions[1]) {
-        resultat = "Le joueur 2 gagne avec la magie du " + tabActions[1] + " contre le joueur 1 avec la magie des " + tabActions[0] + " ! ";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
-        cptVictoireJoueur2++;
-        document.getElementById("cptVictoireJoueur2").innerText = Number(cptVictoireJoueur2);
+        setTimeout(() => {
+            resultat = "Le joueur 2 gagne avec la magie du " + tabActions[1] + " contre le joueur 1 avec la magie des " + tabActions[0] + " ! ";
+            document.getElementById("resultat").innerText = resultat;
+            cptVictoireJoueur2++;
+            document.getElementById("cptVictoireJoueur2").innerText = Number(cptVictoireJoueur2);
+        }, "3000");
     } else if (actionJoueur1 == tabActions[0] && actionJoueur2 == tabActions[2]) {
-        resultat = "Le joueur 1 gagne avec la magie des " + tabActions[0] + " contre le joueur 2 avec la magie de l' " + tabActions[2] + " ! ";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
-        cptVictoireJoueur1++;
-        document.getElementById("cptVictoireJoueur1").innerText = Number(cptVictoireJoueur1);
+        setTimeout(() => {
+            resultat = "Le joueur 1 gagne avec la magie des " + tabActions[0] + " contre le joueur 2 avec la magie de l' " + tabActions[2] + " ! ";
+            document.getElementById("resultat").innerText = resultat;
+            cptVictoireJoueur1++;
+            document.getElementById("cptVictoireJoueur1").innerText = Number(cptVictoireJoueur1);
+        }, "3000");
     } else if (actionJoueur1 == tabActions[1] && actionJoueur2 == tabActions[0]) {
-        resultat = "Le joueur 1 gagne avec la magie du " + tabActions[1] + " contre le joueur 2 avec la magie des " + tabActions[0] + " ! ";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
-        cptVictoireJoueur1++;
-        document.getElementById("cptVictoireJoueur1").innerText = Number(cptVictoireJoueur1);
+        setTimeout(() => {
+            resultat = "Le joueur 1 gagne avec la magie du " + tabActions[1] + " contre le joueur 2 avec la magie des " + tabActions[0] + " ! ";
+            document.getElementById("resultat").innerText = resultat;
+            cptVictoireJoueur1++;
+            document.getElementById("cptVictoireJoueur1").innerText = Number(cptVictoireJoueur1);
+        }, "3000");
     } else if (actionJoueur1 == tabActions[2] && actionJoueur2 == tabActions[0]) {
-        resultat = "Le joueur 2 gagne avec la magie des " + tabActions[0] + " contre le joueur 1 avec la magie de l' " + tabActions[2] + " ! ";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
-        cptVictoireJoueur2++;
-        document.getElementById("cptVictoireJoueur2").innerText = Number(cptVictoireJoueur2);
+        setTimeout(() => {
+            resultat = "Le joueur 2 gagne avec la magie des " + tabActions[0] + " contre le joueur 1 avec la magie de l' " + tabActions[2] + " ! ";
+            document.getElementById("resultat").innerText = resultat;
+            cptVictoireJoueur2++;
+            document.getElementById("cptVictoireJoueur2").innerText = Number(cptVictoireJoueur2);
+        }, "3000");
     } else if (actionJoueur1 == tabActions[1] && actionJoueur2 == tabActions[2]) {
-        resultat = "Le joueur 2 gagne avec la magie de l' " + tabActions[2] + " contre le joueur 1 avec la magie du " + tabActions[1] + " ! ";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
-        cptVictoireJoueur2++;
-        document.getElementById("cptVictoireJoueur2").innerText = Number(cptVictoireJoueur2);
+        setTimeout(() => {
+            resultat = "Le joueur 2 gagne avec la magie de l' " + tabActions[2] + " contre le joueur 1 avec la magie du " + tabActions[1] + " ! ";
+            document.getElementById("resultat").innerText = resultat;
+            cptVictoireJoueur2++;
+            document.getElementById("cptVictoireJoueur2").innerText = Number(cptVictoireJoueur2);
+        }, "3000");
     } else if (actionJoueur1 == tabActions[2] && actionJoueur2 == tabActions[1]) {
-        resultat = "Le joueur 1 gagne avec la magie de l' " + tabActions[2] + " contre le joueur 2 avec la magie du " + tabActions[1] + " ! ";
+        resultat = "Suspense...";
         document.getElementById("resultat").innerText = resultat;
-        cptVictoireJoueur1++;
-        document.getElementById("cptVictoireJoueur1").innerText = Number(cptVictoireJoueur1);
+        setTimeout(() => {
+            resultat = "Le joueur 1 gagne avec la magie de l' " + tabActions[2] + " contre le joueur 2 avec la magie du " + tabActions[1] + " ! ";
+            document.getElementById("resultat").innerText = resultat;
+            cptVictoireJoueur1++;
+            document.getElementById("cptVictoireJoueur1").innerText = Number(cptVictoireJoueur1);
+        }, "3000");
     }
 }
