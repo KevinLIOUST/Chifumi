@@ -7,13 +7,13 @@
     <title>Chifumi</title>
 
     <!-- Lien vers Bootstrap -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Lien vers les icônes Bootstrap -->
     <!-- <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css"> -->
 
     <!-- Lien pour utiliser JavaScript pour les actions de l'utilisateur -->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
@@ -23,8 +23,47 @@
 <body class="d-block">
 
     <!-- Pour le header -->
-    <header class="d-flex justify-content-center p-3">
-        <h1 class="mx-auto ms-auto text-white">FairyTail Version Chifumi</h1>
+    <header class="d-block text-center p-3 mb-3">
+        <h1 class="mx-auto ms-auto text-white m-3">FairyTail Version Chifumi</h1>
+        <img data-bs-toggle="modal" data-bs-target="#modal-regles" src="img/bouton_parchemin_regles_du_jeu_4.png"
+            alt="bouton_parchemin_regles_du_jeu_4.png">
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-regles" tabindex="-1" aria-labelledby="modal-clim-Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal-clim-Label">Infos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                        <p>Le chifumi, tout le monde le connaît. Chaque joueur a 3 actions qu'il peut faire :</p>
+
+                        <p>- Pierre ;</p>
+                        <p>- Feuille ;</p>
+                        <p>-Ciseaux.</p>
+
+                        <p>Mais là, on a le feu, l'eau et la plante</p>
+
+                        <img src="/img/regles-du-jeu-feu-eau-plante-5.png" alt="regles-du-jeu-feu-eau-plante-5.png">
+
+                        <p>Prenons l'exemple pour 2 joueurs.</p>
+                        <p>Si le joueur 1 choisi "Feu" et que le joueur 2 choisi "Eau", alors c'est l'eau qui gagne, car
+                            elle éteint le feu.
+                        </p>
+                        <p>Si le joueur 1 choisi "Eau" et que le joueur 2 choisi "Plante", alors c'est la plante qui
+                            gagne, car elle a besoin d'eau pour pousser.
+                        </p>
+                        <p>Si le joueur 1 choisi "Plante" et que le joueur 2 choisi "Feu", alors c'est le feu qui gagne,
+                            car le feu brûle la plante.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Pour le contenu principal de la page -->
@@ -37,16 +76,15 @@
         <div class=" text-center m-3">
 
             <!-- <button class=" m-3" onclick="jouerAction('Pierre')">Pierre</button> -->
-            <img class="text-white m-3" onclick="jouerAction('Acier')" src="img/Gajeel_Redfox_2.png"
-                alt="Gajeel_Redfox_2.png">
+            <img class="text-white m-3" onclick="jouerAction('Plantes')" src="img/Cosmos_1.png" alt="Cosmos_1.png">
 
             <!-- <button class="m-3" onclick="jouerAction('Feuille')">Feuille</button> -->
-            <img class="text-white m-3" onclick="jouerAction('Feu')" src="img/natsu_dragnir_3.png"
-                alt="natsu_dragnir_3.png">
+            <img class="text-white m-3" onclick="jouerAction('Feu')" src="img/natsu_dragnir_4.png"
+                alt="natsu_dragnir_4.png">
 
             <!-- <button class="m-3" onclick="jouerAction('Ciseaux')">Ciseaux</button> -->
-            <img class="text-white m-3" onclick="jouerAction('Glace')" src="img/Gray_Fullbuster_2.png"
-                alt="Gray_Fullbuster_2.png">
+            <img class="text-white m-3" onclick="jouerAction('Eau')" src="img/Jubia_Lockser_2.png"
+                alt="Jubia_Lockser_2.png">
 
         </div>
 
@@ -56,12 +94,12 @@
 
         <div class="d-block text-center m-3">
             <div class="d-flex justify-content-center">
-                <p class="text-white textJoueur1">Victoires Joueur 1 : </p>
-                <span id="cptVictoireJoueur1" class="text-white"> </span>
+                <p class="text-white textJoueur1">Victoires Joueur <span> 1 : </span></p>
+                <span id="cptVictoireJoueur1" class="text-white mx-3 victoiresJoueur1"> </span>
             </div>
             <div class="d-flex justify-content-center">
-                <p class="text-white textJoueur2">Victoires Joueur 2 : </p>
-                <span id="cptVictoireJoueur2" class="text-white"> </span>
+                <p class="text-white textJoueur2">Victoires Joueur <span> 2 : </span></p>
+                <span id="cptVictoireJoueur2" class="text-white mx-3 victoiresJoueur2"> </span>
             </div>
         </div>
     </main>

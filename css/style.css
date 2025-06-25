@@ -8,12 +8,12 @@
 
 h1 {
   font-family: FairyTail;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 main div h2 {
   font-family: FairyTail;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 body {
@@ -31,13 +31,32 @@ body {
   font-size: 30px;
 }
 
+.textJoueur1 span {
+  font-family: Delius;
+  font-size: 30px;
+}
+
+.textJoueur2 span {
+  font-family: Delius;
+  font-size: 30px;
+}
+
+.victoiresJoueur1 {
+  font-family: Delius;
+  font-size: 30px;
+}
+.victoiresJoueur2 {
+  font-family: Delius;
+  font-size: 30px;
+}
+
 /* Média screen pour l'iPhone SE */
 @media screen and (max-width: 375px) and (min-width: 375px) and (max-height: 667px) and (min-height: 667px) {
   main div {
     display: block;
   }
   main div img {
-    width: 4.1rem;
+    width: 5rem;
   }
 }
 
@@ -47,7 +66,7 @@ body {
     display: block;
   }
   main div img {
-    width: 7rem;
+    width: 8.5rem;
   }
 }
 
@@ -57,7 +76,7 @@ body {
     display: block;
   }
   main div img {
-    width: 6rem;
+    width: 8rem;
   }
 }
 
@@ -67,7 +86,7 @@ body {
     display: block;
   }
   main div img {
-    width: 6.5rem;
+    width: 9rem;
   }
 }
 
@@ -77,7 +96,7 @@ body {
     display: block;
   }
   main div img {
-    width: 6.5rem;
+    width: 8.5rem;
   }
 }
 
@@ -87,7 +106,7 @@ body {
     display: block;
   }
   main div img {
-    width: 4.5rem;
+    width: 6rem;
   }
 }
 
@@ -97,7 +116,7 @@ body {
     display: block;
   }
   main div img {
-    width: 12.5rem;
+    width: 13rem;
   }
 }
 
@@ -107,7 +126,7 @@ body {
     display: block;
   }
   main div img {
-    width: 13rem;
+    width: 15.5rem;
   }
 }
 
@@ -117,7 +136,7 @@ body {
     display: block;
   }
   main div img {
-    width: 17.5rem;
+    width: 19.5rem;
   }
 }
 
@@ -127,7 +146,7 @@ body {
     display: block;
   }
   main div img {
-    width: 15.5rem;
+    width: 19.5rem;
   }
 }
 
@@ -137,7 +156,7 @@ body {
     display: block;
   }
   main div img {
-    width: 7.7rem;
+    width: 7.5rem;
   }
 }
 
@@ -147,7 +166,7 @@ body {
     display: block;
   }
   main div img {
-    width: 6rem;
+    width: 6.5rem;
   }
 }
 
@@ -157,7 +176,7 @@ body {
     display: block;
   }
   main div img {
-    width: 14.2rem;
+    width: 17.5rem;
   }
 }
 
@@ -167,7 +186,7 @@ body {
     display: block;
   }
   main div img {
-    width: 6.5rem;
+    width: 8.5rem;
   }
 }
 
@@ -177,7 +196,7 @@ body {
     display: block;
   }
   main div img {
-    width: 6rem;
+    width: 7rem;
   }
 }
 
@@ -187,6 +206,6 @@ body {
     display: block;
   }
   main div img {
-    width: 11rem;
+    width: 17rem;
   }
 }
